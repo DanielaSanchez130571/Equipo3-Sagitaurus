@@ -14,6 +14,7 @@
     margin: 0;
     padding: 0;
     font-family: Playfair-Display;
+    box-sizing: border-box;
 }
 
 
@@ -29,8 +30,9 @@
 }
 
 .barra_icono{
-   width: 30px;
+   width: 45px;
    padding: 10px;
+   margin-right: 10px;
 }
 
 .encabezado{
@@ -61,27 +63,24 @@ nav ul li{
     color: black;
     list-style: none;
     float: left;
-    margin-left: 50px;
-    margin-top: 70px;
-    padding: 7px;
+    margin-left: 20px;
+    margin-top: 55px;
+    padding: 10px;
     font-size: 20px;
 }
 
 .barra-navegacion__ventanas:hover{
-    margin-left: 50px;
-    margin-top: 70px;
-    padding: 7px;
-    color: #7C4E29;
+    margin-left: 20px;
+    margin-top: 55px;
+    padding: 10px;
+    color: var(--color-cafe);
     border: 1px solid var(--color-cafe);
-    border-radius: 4px;
+    border-radius: 15px;
     box-shadow: 0px 0px 2px var(--color-cafe);   
 }
 
-
 .logo{
-    width: 150px;
-    position:float;
-    vertical-align: top;
+    width: 150px;   
 }
 
 hr{
@@ -90,35 +89,82 @@ hr{
 }
 
 
-footer{
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--color-primario);
-
+.contenido-footer{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.pie-pagina{
-    text-align: center;
-    padding-top: 80px;
-    text-align: justify;
+footer{
+    list-style: none;
+    background-color: #CFC4BD;
+    padding: 20px 0;
+}
+
+.contenido-footer-dos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenido-footer-texto{
+    width: 33%;
+    padding: 0 15px;
+    display: inline-block;
+}
+
+.Siguenos__logo{
+    width: 200px;
+    margin-left: 30px;
+    margin-top: 0;
+}
+
+.siguenos__titulo{
+    margin-bottom: 20px;
+}
+
+.Siguenos__redes{
+    margin-left: 50px;
     
 }
 
-.pie-pagina__redes{
-    padding-top: 50px;
+.Siguenos__redes img{
+    padding: 0 10px;
 }
 
+.informacion{
+    margin-left: 10px;
+}
+.informacion h4{
+    margin-top: 40px;
+}
 
-.pie-pagina__texto{
-    padding: 10px;
+.informacion hr{
+    width: 55%;
+    border: 1px solid var(--color-cafe);
+    margin-top: 10px;
+}
 
+.informacion ul li{
+    list-style: none;
+    margin-top: 20px ;
+    font-size: 12px;
+    text-align: justify;
 }
 
 .mapa{
-    display: inline-block;
     text-align: center;
-    position: relative;
-    left: 70%;
-    vertical-align: top;
-    padding: 15px;
-} 
+}
+
+.mapa__titulo{
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+
+.mapa__frame{
+    margin-bottom: 10px;
+}
+.mapa-texto ul li{
+    list-style: none;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 3px;
+}
