@@ -1,0 +1,96 @@
+
+@font-face {
+    font-family: Playfair-Display;
+    src: url("Font/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+
+@font-face {
+    font-family: Montserrat;
+    src: url("Font/Montserrat-Light.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Playfair-Display;
+}
+
+
+:root{
+    --color-primario:#CFC4BD;
+    --color-cafe: #7C4E29;
+}
+
+.barra{
+    background-color: var(--color-primario);
+    text-align: right;
+    
+}
+
+.barra_icono{
+   width: 30px;
+   padding: 10px;
+}
+
+
+.barra-navegacion{
+    color:black;
+    margin: 10px 25% 10px 25%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+
+figure{
+    width: 150px;
+    text-align: right;
+}
+
+.logo{
+    width: 150px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+hr{
+    background-color: var(--color-cafe);
+    border: 1px solid var(--color-cafe);
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--color-primario);
+
+}
+
+.pie-pagina{
+    text-align: center;
+    padding-top: 80px;
+    text-align: justify;
+    
+}
+
+.pie-pagina__redes{
+    padding-top: 50px;
+}
+
+
+.pie-pagina__texto{
+    padding: 10px;
+
+}
+
+.mapa{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    left: 70%;
+    vertical-align: top;
+    padding: 15px;
+} 
