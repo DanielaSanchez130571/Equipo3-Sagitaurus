@@ -43,6 +43,22 @@
     vertical-align: middle;
 }
 
+.barra-navegacion__ventanas{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.barra-navegacion__ventanas:hover{
+    color: #7C4E29;
+    border: 1px solid var(--color-cafe);
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 0px 0px 2px var(--color-cafe);   
+}
+
+
+
 
 figure{
     width: 150px;
