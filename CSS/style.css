@@ -1,13 +1,13 @@
 
 @font-face {
     font-family: Playfair-Display;
-    src: url("Font/PlayfairDisplay-VariableFont_wght.ttf");
+    src: url("../Fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf");
 }
 
 
 @font-face {
     font-family: Montserrat;
-    src: url("Font/Montserrat-Light.ttf");
+    src: url("../Fonts/Montserrat-Light.ttf");
 }
 
 *{
