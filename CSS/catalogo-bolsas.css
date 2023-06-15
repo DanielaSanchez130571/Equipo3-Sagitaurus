@@ -1,10 +1,32 @@
+:root{
+    --color-primario:#CFC4BD;
+    --color-cafe: #7C4E29;
+}
+
 .contenido-galeria-productos{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 
 h1{
     text-align: center;
     margin:15px
+}
+
+.card{    
+    margin-bottom: 15px;
+    background-color: var(--color-primario);
+    
+}
+
+.card__imagen{
+    height: 200px;
+    width: 200px;
+    padding:5px;
+       
+}
+figcaption{
+    text-align: center;
+    padding: 5px 0 5px 0;
 }
