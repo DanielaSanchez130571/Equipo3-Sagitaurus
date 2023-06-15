@@ -22,16 +22,16 @@
             <div class="barra-navegacion">
                 <nav>
                     <ul>
-                        <li><a class="barra-navegacion__ventanas" href="#cinturones">Cinturones</a></li>
-                        <li><a class="barra-navegacion__ventanas" href="#carteras">Carteras</a></li>
-                        <li><a class="barra-navegacion__ventanas" href="#portafolios">Portafolios</a></li>
-                        <li><a class="barra-navegacion__ventanas" href="#bolsas">Bolsas</a></li>
+                        <li><a class="barra-navegacion__ventanas" href="../HTML\catalogo-cinturones.html">Cinturones</a></li>
+                        <li><a class="barra-navegacion__ventanas" href="../HTML\catalogo-carteras.html">Carteras</a></li>
+                        <li><a class="barra-navegacion__ventanas" href="../HTML\catalogo-portafolios.html">Portafolios</a></li>
+                        <li><a class="barra-navegacion__ventanas" href="../HTML\catalogo-bolsas.html">Bolsas</a></li>
                     </ul>
                 </nav>
             </div>
 
             <figure>
-                <img class="logo" src="../Imagenes/logo.png" alt="logo">
+                <a href="../Index.html"><img class="logo" src="../Imagenes/logo.png" alt="logo"></a>
             </figure>
     </section>
     <hr>
@@ -45,21 +45,21 @@
             <form action="/my-handling-form-page" method="post">
                                
                 <fieldset>
-                    <legend><h1>REGISTRO</h1></legend>
+                    <legend class="formulario__legend"><h1>REGISTRO</h1></legend>
                     <br>
 
-                    <label for="correo" >
+                    <label class="formulario__label" for="correo" >
                         Correo electrónico
                         <br>
                         
-                        <input type="email" id="correo" name="user_email">
+                        <input class="formulario__input" type="email" id="correo" name="user_email">
                         
                     </label>
                     <br>
-                    <label for="contraseña">
+                    <label class="formulario__label" for="contraseña">
                         Contraseña
                         <br>
-                        <input type="password" id="contraseña" name="user_password">
+                        <input class="formulario__input" type="password" id="contraseña" name="user_password">
                     </label>
 
                     <br>
