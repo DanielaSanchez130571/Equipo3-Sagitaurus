@@ -14,6 +14,11 @@
     src: url("Font/Montserrat-Light.ttf");
 }
 
+.galeria-productos{
+    margin-top: 25px;
+    margin-bottom: 110px;
+}
+
 .contenido-galeria-productos{
     display: flex;
     justify-content: space-around;
