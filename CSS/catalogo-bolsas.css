@@ -3,6 +3,17 @@
     --color-cafe: #7C4E29;
 }
 
+@font-face {
+    font-family: Playfair-Display;
+    src: url("Font/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+
+@font-face {
+    font-family: Montserrat;
+    src: url("Font/Montserrat-Light.ttf");
+}
+
 .contenido-galeria-productos{
     display: flex;
     justify-content: space-around;
@@ -12,6 +23,7 @@
 h1{
     text-align: center;
     margin:15px
+    
 }
 
 .card{    
@@ -24,7 +36,6 @@ h1{
     height: 200px;
     width: 200px;
     padding:5px;
-       
 }
 figcaption{
     text-align: center;
