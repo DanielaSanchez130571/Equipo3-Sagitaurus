@@ -4,122 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sagitaurus-Equipo3</title>
+    <link rel="stylesheet" href="../CSS\formulario.css">
+    <link rel="stylesheet" href="../CSS/principal.css">
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/formulario.css">
 </head>
 
-<header class="encabezado">
+<body>
+    <header >
+        <div class="barra">
+           <a href="buscador"><img class="barra_icono" src="../Imagenes/lupa.png" alt="buscador"></a>
+           <a href="usuario"><img class="barra_icono" src="../Imagenes/usuario.png" alt="usuario"></a>
+           <a href="carrito"><img class="barra_icono" src="../Imagenes/bolsa-de-la-compra.png" alt="carrito"></a>
+
+        </div>
+        <section class="encabezado">
+            <div class="barra-navegacion">
+                <nav>
+                    <ul>
+                        <li><a class="barra-navegacion__ventanas" href="#cinturones">Cinturones</a></li>
+                        <li><a class="barra-navegacion__ventanas" href="#carteras">Carteras</a></li>
+                        <li><a class="barra-navegacion__ventanas" href="#portafolios">Portafolios</a></li>
+                        <li><a class="barra-navegacion__ventanas" href="#bolsas">Bolsas</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <figure>
+                <img class="logo" src="../Imagenes/logo.png" alt="logo">
+            </figure>
+    </section>
+    <hr>
+    </header>
+
+    <main>
+       
+        
     
-    <div class="barra">
-        
-        <a href="README.md"><img src="../Imagenes/lupa.png" height="40" alt="busqueda"></a>
-        <a href="README.md"><img src="../Imagenes/usuario.png" height="40" alt="usuario"></a>
-        <a href="README.md"><img src="../Imagenes/bolsa-de-la-compra.png" height="40" alt="bolsa-compras"></a>
-    </div>
-</header>
-
-<nav>
-    
-
-    <div class="barra-navegacion">
-
-        <section class="logo">
-
-        
-            <a href="README.md"><img src="i../Imagenes/logo.png" height="150px"  alt="pagina-principal"></a>
-        </section>
-        <section class="barra-ventanas">
-            <a href="README.md" alt="cinturones">Cinturones</a>
-            <a href="README.md" alt="carteras">Carteras</a>
-            <a href="README.md" alt="portafolios">Portafolios</a>
-            <a href="README.md" alt="bolsas">Bolsas</a>
-
-        </section>
-        
-    </div>
-        
-</nav>
-
-<main>
-
-
-    <body>
         <div class="formulario">
-            <form>
-                <h1>REGISTRO</h1>
-                
+            <form action="/my-handling-form-page" method="post">
+                               
                 <fieldset>
-                    <label for="correo" class="texto" >
+                    <legend><h1>REGISTRO</h1></legend>
+                    <br>
+
+                    <label for="correo" >
                         Correo electrónico
                         <br>
-                        <input type="text" id="correo">
+                        
+                        <input type="email" id="correo" name="user_email">
+                        
                     </label>
                     <br>
-                    <label for="contraseña" class="texto">
+                    <label for="contraseña">
                         Contraseña
                         <br>
-                        <input type="text" id="contraseña">
+                        <input type="password" id="contraseña" name="user_password">
                     </label>
+
+                    <br>
+                    <input id="boton-registro" type="submit"  value="Registrarse">
                 </fieldset>
-                <br>
-                <input id="boton-registro" type="submit"  value="Registrarse" >
-                
+
             </form>
         </div>
-    </body>
-    
-        
-    
-            
-    
-</main>
-
-
-<footer>
-
-    <div class="logo-redes-sociales">
-        <a href="README.md"><img src="../Imagenes/logo.png" height="150px"  alt="pagina-principal"></a>
-        <br>
-        <a href="README.md"><img src="../Imagenes/whatsapp.png" height="50"  alt="whatsapp"></a>
-        <a href="README.md"><img src="../Imagenes/instagram.png" height="50" alt="instagram"></a>
-    </div>
-
-    <div class="pie-pagina">
-        <p>
-            <h4>SERVICIO AL CLIENTE</h4>
-            <br>
-            <h4>ATENCION@vd.com</h4>
-            <br>
-            <h4>CONTÁCTANOS 554327 23 78</h4>
-            <br>
-            <h4>LUNES A VIERNES 9 AM A 7 PM</h4>
-            <br>
-            <h4>AVISO DE PRIVACIDAD</h4>
-            <br>
-            <h4>TÉRMINOS Y CONDICIONES</h4>
-            
-
-        </p>
-    </div>
     
 
-    <div class="mapa">
-        
-        <h2>ENCUENTRANOS EN:</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.576444275935!2d-99.1274743850954!3d19.300776986959377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01a2c4234d5b%3A0x837f2fc05c4fa99e!2sNuevo%20Bazar%20Pericoapa!5e0!3m2!1ses-419!2smx!4v1686319988254!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <h1>CIUDAD DE MÉXICO</h1>
-        <p>
-            Canal de Miramontes 3155, Coapa, 
-            <br>Vergel Coapa,Tlalpan, 14320 
-            <br>Ciudad de México, CDMX
-        </p>
-        <br>
-        <br>
-    </div>
-</footer>
 
-    
-    
+    </main>
+
+    <footer>
+        <div class="contenido-footer">
+            <div class="contenido-footer-dos"> 
+
+                    <div class="contenido-footer-texto siguenos" >
+                        <img class="Siguenos__logo" src="../Imagenes/logo.png" alt="logo">
+                        <h4 class="siguenos__titulo">Siguenos en nuestras redes sociales</h4>
+                        <div class="Siguenos__redes">
+                        <a href="README.md"><img src="../Imagenes/whatsapp.png" height="40"  alt="whatsapp"></a>
+                        <a href="README.md"><img src="../Imagenes/instagram.png" height="40" alt="instagram"></a>
+                        </div>
+                    </div>  
+
+                    <div class="contenido-footer-texto informacion">
+                        <ul>
+                            <h4>ATENCION AL CLIENTE : </h4>
+                            <hr>
+                            <li>ATENCION@vd.com.</li>
+                            <li>CONTÁCTANOS 554327 23 78</li>
+                            <li>LUNES A VIERNES 9 AM A 7 PM.</li>
+                            <li>AVISO DE PRIVACIDAD.</li>
+                            <li>TÉRMINOS Y CONDICIONES</li>
+                        </ul>
+                    </div>
+
+                    <div class="contenido-footer-texto mapa">
+                        <h5 class="mapa__titulo"> ENCUENTRANOS EN :</h5>
+                        <iframe class="mapa__frame" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1744.2648882605708!2d-99.17801359606538!3d19.32934356234122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdepartamento%20de%20etologia%20fmvz%20unam!5e0!3m2!1ses!2smx!4v1685460678792!5m2!1ses!2smx" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        <div class=" mapa-texto">
+                            <ul>
+                                <li class="mapa-texto__lista">Canal de Miramontes 3155, Coapa</li>
+                                <li class="mapa-texto__lista">Vergel Coapa,Tlalpan, 14320 </li>
+                                <li class="mapa-texto__lista">Ciudad de México, CDMX</li>
+                            </ul>
+                        </div>
+                    </div> 
+            </div> 
+        </div>
+    </footer>
+     
 </body>
 </html>
