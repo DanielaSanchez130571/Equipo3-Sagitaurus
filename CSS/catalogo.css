@@ -16,12 +16,14 @@
 
 .galeria-productos{
     margin-top: 25px;
-    margin-bottom: 110px;
+    margin-bottom: 50px;
 }
 
 .contenido-galeria-productos{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+
 
 }
 
@@ -34,13 +36,13 @@ h1{
 .card{    
     margin-bottom: 15px;
     background-color: var(--color-primario);
-    
+    border:100px;
 }
 
 .card__imagen{
     height: 200px;
-    width: 200px;
-    padding:5px;
+    width: 170px;
+    margin:20px
 }
 figcaption{
     text-align: center;
