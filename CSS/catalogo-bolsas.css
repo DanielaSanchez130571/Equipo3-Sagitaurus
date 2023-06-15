@@ -1,0 +1,10 @@
+.contenido-galeria-productos{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+h1{
+    text-align: center;
+    margin:15px
+}
