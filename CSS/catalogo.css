@@ -1,0 +1,50 @@
+:root{
+    --color-primario:#CFC4BD;
+    --color-cafe: #7C4E29;
+}
+
+@font-face {
+    font-family: Playfair-Display;
+    src: url("Font/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+
+@font-face {
+    font-family: Montserrat;
+    src: url("Font/Montserrat-Light.ttf");
+}
+
+.galeria-productos{
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.contenido-galeria-productos{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+
+
+}
+
+h1{
+    text-align: center;
+    margin:15px
+    
+}
+
+.card{    
+    margin-bottom: 15px;
+    background-color: var(--color-primario);
+    border:100px;
+}
+
+.card__imagen{
+    height: 200px;
+    width: 170px;
+    margin:20px
+}
+figcaption{
+    text-align: center;
+    padding: 5px 0 5px 0;
+}
