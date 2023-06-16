@@ -5,8 +5,7 @@ function guardar_datos(event){
 
 
     console.log("Correo", $EMAIL)
-    console.log("Contrasena", $PASSWORD)
-
+    
 
     /* mostrar una alerta cuando se envia formulario */
     alert("Formulario enviado correctamente")
