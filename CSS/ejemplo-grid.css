@@ -1,0 +1,129 @@
+#pixeles>*{
+    border: 1px solid red;
+
+}
+
+#pixeles {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 100px 200px 100px;
+}
+
+#fracciones>*{
+    border: 2px solid rgb(81, 0, 255);
+
+}
+
+#fracciones{
+    display: grid;
+    grid-template-columns: 100px 1fr 2fr;
+    grid-template-rows: 50px;
+    grid-gap: 20px;
+}
+
+#repetir>*{
+    border: 2px solid rgb(57, 202, 13);
+
+}
+
+#repetir{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(2, 50px);
+    row-gap: 20px;
+}
+
+#adaptable>*{
+    border: 2px solid rgb(243, 156, 7);
+
+}
+
+#adaptable{
+    display: grid;
+    grid-template-columns: 200px minmax(300px, 800px) 200px;
+    grid-template-rows: repeat(2, 50px);
+    column-gap: 20px;
+}
+
+#areas>*{
+    border: 2px solid rgb(200, 7, 243);
+    text-align: center;
+    padding: 10px;
+
+}
+
+#areas{
+    display: grid;
+    grid-template-areas: "header header navegacion"
+                        "main main navegacion"
+                        "main main aside"
+                        "formulario formulario aside"
+                        "foot foot foot";
+    grid-template-rows: 50px;
+}
+
+#uno{
+    grid-area: header;
+}
+
+#dos{
+    grid-area: navegacion;
+}
+
+#tres{
+    grid-area: main;
+}
+
+#cuatro{
+    grid-area: aside;
+}
+
+#cinco{
+    grid-area: formulario;
+}
+
+#seis{
+    grid-area: foot;
+}
+
+#lineas>*{
+    border: 2px solid rgb(7, 227, 243);
+    text-align: center;
+    padding: 10px;
+
+}
+
+#lineas{
+    display: grid;
+    grid-template-columns: aunto 40% auto;
+    grid-template-rows: repeat(4, 50px);
+}
+
+#luno{
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+#ldos{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+#ltres{
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+}
+
+#lcuatro{
+    grid-row: 4 / 5;
+}
+
+#lcinco{
+   
+    grid-row: 4 / 5;
+}
+
+#lseis{
+ 
+    grid-row: 4 / 5;
+}
