@@ -1,0 +1,167 @@
+
+@font-face {
+    font-family: Playfair-Display;
+    src: url("Font/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
+
+@font-face {
+    font-family: Montserrat;
+    src: url("Font/Montserrat-Light.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Playfair-Display;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --color-primario:#CFC4BD;
+    --color-cafe: #7C4E29;
+}
+
+.barra{
+    background-color: var(--color-primario);
+    text-align: right;
+    
+}
+
+.barra_icono{
+   width: 45px;
+   padding: 10px;
+   margin-right: 10px;
+}
+
+.encabezado{
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+    float: left;
+    vertical-align: top;
+}
+
+.barra-navegacion{
+    width: 900px;
+    margin: 0 auto;    
+}
+
+nav ul li {
+    list-style: none;
+
+}
+
+
+.barra-navegacion__ventanas{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    float:inline-start;
+    margin-left: 80px;
+    padding: 10px;
+    font-size: 23px;
+}
+
+.barra-navegacion__ventanas:hover{
+    color: var(--color-cafe);
+    border: 1px solid var(--color-cafe);
+    border-radius: 15px;
+    box-shadow: 0px 0px 1px var(--color-cafe);   
+}
+
+.logo{
+    width: 150px;   
+}
+
+hr{
+    background-color: var(--color-cafe);
+    border: 1.5px solid var(--color-cafe);
+}
+
+
+.contenido-footer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer{
+    list-style: none;
+    background-color: #CFC4BD;
+    padding: 20px 0;
+}
+
+.contenido-footer-dos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenido-footer-texto{
+    width: 33%;
+    padding: 0 15px;
+    display: inline-block;
+}
+
+.Siguenos__logo{
+    width: 200px;
+    margin-left: 30px;
+    margin-top: 0;
+}
+
+.siguenos__titulo{
+    margin-bottom: 20px;
+}
+
+.Siguenos__redes{
+    margin-left: 50px;
+    
+}
+
+.Siguenos__redes img{
+    padding: 0 10px;
+}
+
+.informacion{
+    margin-left: 10px;
+}
+.informacion h4{
+    margin-top: 40px;
+}
+
+.informacion hr{
+    width: 55%;
+    border: 1px solid var(--color-cafe);
+    margin-top: 10px;
+}
+
+.informacion ul li{
+    list-style: none;
+    margin-top: 20px ;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.mapa{
+    text-align: center;
+}
+
+.mapa__titulo{
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+
+.mapa__frame{
+    margin-bottom: 10px;
+}
+.mapa-texto ul li{
+    list-style: none;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 3px;
+}
