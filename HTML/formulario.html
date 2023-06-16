@@ -38,37 +38,39 @@
     </header>
 
     <main>
-       
-        
-    
-        <div class="formulario">
-            <form id="miFormulario" method="post">
-                               
-                <fieldset>
-                    <legend class="formulario__legend"><h1>REGISTRO</h1></legend>
-                    <br>
+        <form  id="formulario__form" class="formulario__form" action="../JS/formulario.js" method="post">
 
-                    <label class="formulario__label" for="correo" >
-                        Correo electrónico
-                        <br>
-                        
-                        <input class="formulario__input" type="email" id="correo" name="user_email">
-                        
-                    </label>
-                    <br>
-                    <label class="formulario__label" for="contraseña">
-                        Contraseña
-                        <br>
-                        <input class="formulario__input" type="password" id="contraseña" name="user_password">
-                    </label>
+            <fieldset class="formulario-bloques">
 
-                    <br>
-                    <input id="boton-registro" type="submit"  value="Registrarse">
-                </fieldset>
+                <legend class="formulario-bloques__titulo"> REGISTRO </legend>
+                <hr class="hr-formulario">
 
-            </form>
-        </div>
-    
+                <div class="formulario-bloques__grid">
+
+                    <div class="formulario-bloques__div">
+                        <label for="correo-usuario">
+                            Correo electronico :
+                            <br>
+                            <input id="correo-usuario" type="email" size="30" placeholder="ejemplo@sagitaurus.mx">
+                        </label>
+                    </div>
+
+                    <div class="formulario-bloques__div">
+                        <label for="contrasena">
+                            Contraseña
+                            <br>
+                            <input id="contrasena" type="password" size="30" name="contrasena">
+                        </label>
+                    </div>
+                
+                </div>
+            </fieldset>
+
+            <div class="formulario__boton">
+                <button class="formulario__boton-enviar" type="submit">Registrarse</button>
+            </div>
+
+        </form>    
 
 
     </main>
