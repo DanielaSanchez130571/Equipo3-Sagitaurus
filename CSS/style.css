@@ -1,12 +1,12 @@
 @font-face {
     font-family: Playfair-Display;
-    src: url("../Fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf");
+    src: url("Font/PlayfairDisplay-VariableFont_wght.ttf");
 }
 
 
 @font-face {
     font-family: Montserrat;
-    src: url("../Fonts/Montserrat-Light.ttf");
+    src: url("Font/Montserrat-Light.ttf");
 }
 
 *{
@@ -35,9 +35,10 @@
 }
 
 .encabezado{
-    width: 100%;
     clear: both;
-    display: table;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .logo{
@@ -48,34 +49,30 @@
 
 .barra-navegacion{
     width: 900px;
-    margin: 0 auto;
-    float: right;
-    
+    margin: 0 auto;    
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
+
 }
+
 
 .barra-navegacion__ventanas{
     text-decoration: none;
     color: black;
     list-style: none;
-    float: left;
-    margin-left: 20px;
-    margin-top: 55px;
+    float:inline-start;
+    margin-left: 80px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 .barra-navegacion__ventanas:hover{
-    margin-left: 20px;
-    margin-top: 55px;
-    padding: 10px;
     color: var(--color-cafe);
     border: 1px solid var(--color-cafe);
     border-radius: 15px;
-    box-shadow: 0px 0px 2px var(--color-cafe);   
+    box-shadow: 0px 0px 1px var(--color-cafe);   
 }
 
 .logo{
@@ -84,12 +81,9 @@ nav ul li{
 
 hr{
     background-color: var(--color-cafe);
-    border: 1px solid var(--color-cafe);
+    border: 1.5px solid var(--color-cafe);
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: Playfair-Display;
-}
 
 .contenido-footer{
     max-width: 1200px;
