@@ -1,19 +1,19 @@
 
 @font-face {
     font-family: Playfair-Display;
-    src: url("Font/PlayfairDisplay-VariableFont_wght.ttf");
+    src: url("../Fonts/PlayfairDisplay-VariableFont_wght.ttf");
 }
 
 
 @font-face {
     font-family: Montserrat;
-    src: url("Font/Montserrat-Light.ttf");
+    src: url("../Fonts/Montserrat-Light.ttf");
 }
 
 *{
     margin: 0;
     padding: 0;
-    font-family: Playfair-Display;
+    font-family: Playfair-Display;∫
     box-sizing: border-box;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .barra_icono{
-   width: 45px;
+   width: 25px;
    padding: 10px;
    margin-right: 10px;
 }
@@ -55,7 +55,6 @@
 
 nav ul li {
     list-style: none;
-
 }
 
 
@@ -66,7 +65,7 @@ nav ul li {
     float:inline-start;
     margin-left: 80px;
     padding: 10px;
-    font-size: 23px;
+    font-size: 18px;
 }
 
 .barra-navegacion__ventanas:hover{
@@ -103,9 +102,10 @@ footer{
 }
 
 .contenido-footer-texto{
-    width: 33%;
+    width: 30%;
     padding: 0 15px;
     display: inline-block;
+    font-family: Montserrat; 
 }
 
 .Siguenos__logo{
@@ -130,6 +130,7 @@ footer{
 .informacion{
     margin-left: 10px;
 }
+
 .informacion h4{
     margin-top: 40px;
 }
@@ -145,6 +146,7 @@ footer{
     margin-top: 20px ;
     font-size: 12px;
     text-align: justify;
+    font-family: Montserrat; 
 }
 
 .mapa{
@@ -164,4 +166,5 @@ footer{
     font-size: 14px;
     text-align: center;
     padding-top: 3px;
+    font-family: Montserrat; 
 }

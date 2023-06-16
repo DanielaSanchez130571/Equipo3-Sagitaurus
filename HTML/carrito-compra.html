@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,13 @@
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="../CSS/carrito-compra.css">
 </head>
+
 <body>
-    <header >
+    <header>
         <div class="barra">
-           <a href="buscador"><img class="barra_icono" src="../Imagenes/lupa.png" alt="buscador"></a>
-           <a href="usuario"><img class="barra_icono" src="../Imagenes/usuario.png" alt="usuario"></a>
-           <a href="carrito"><img class="barra_icono" src="../Imagenes/bolsa-de-la-compra.png" alt="carrito"></a>
+            <a href="buscador"><img class="barra_icono" src="../Imagenes/lupa.png" alt="buscador"></a>
+            <a href="usuario"><img class="barra_icono" src="../Imagenes/usuario.png" alt="usuario"></a>
+            <a href="carrito"><img class="barra_icono" src="../Imagenes/bolsa-de-la-compra.png" alt="carrito"></a>
 
         </div>
         <section class="encabezado">
@@ -30,14 +32,15 @@
                 </nav>
             </div>
 
-    </section>
-    <hr>
+        </section>
+        <hr>
     </header>
 
     <aside>
         <h2 class="titulo-carrito-compras">Carrito de compras</h2>
         <article class="card">
-            <a href="cinturon"><img class="card__imagen" src="../Imagenes/CatalogoBolsos/Bolso2.png" alt="articulo-cinturon"></a>
+            <a href="cinturon"><img class="card__imagen" src="../Imagenes/CatalogoBolsos/Bolso2.png"
+                    alt="articulo-cinturon"></a>
             <figcaption><b>Cinturon</b><br>$0.00</figcaption>
         </article>
     </aside>
@@ -51,162 +54,203 @@
                 Porfavor ayudanos a llenar el siguiente formulario con los datos que se te piden.
             </p>
 
-            <form class="formulario__form" action="../JS/formulario.js" method="post" >
+            <form  id="formulario__form" class="formulario__form" action="../JS/formulario.js" method="post">
 
-                <fieldset class="formulario-bloques"> 
+                <fieldset class="formulario-bloques">
 
                     <legend class="formulario-bloques__titulo"> Datos de la compradora </legend>
+                    <hr class="hr-formulario">
 
-                        <label for= "nombre-usuario" class="texto">
-                             Nombre : 
-                            <input id="nombre-usuario" type="texto" class="texto" size="20"  name="nombre" id="nombre"  placeholder="Nombre del usuario" required>
-                        </label>
+                    <div class="formulario-bloques__grid">
 
-                        <label for="apellido-usuario" class="texto">
-                            Apellido :
-                            <input id="apellido-usuario" type="text" class="texto" size="20"  name="apellido" id="apellido"  placeholder="Apellido del usuario" required>
-                        </label>
-                    
-                        <label for="telefono-usuario">
-                            Telefono :
-                            <input id="telefono-usuario" type="tel"
-                            size="20" placeholder="numero telefonico">
-                        </label>
-                        <label for="correo-usuario">
-                            Correo electronico :
-                            <input id="correo-usuario" type="email" 
-                            size="25" placeholder="@ejemplo.com">
-                        </label> 
-                 </fieldset>
-
-                 <fieldset class="formulario-bloques">
-
-                    <legend class="formulario-bloques__titulo"> Datos de envio </legend>
-
-                    <label for="nombre-calle" class="texto">
-                        Nombre de la calle :
-                        <input id="nombre-perro" type="text" placeholder="Nombre de la calle">
-                    </label>
-
-                    <label for="numero-exterior" class="texto">
-                        Numero exterio:
-                        <input id="numero-exterior" type="number"  step="any">
-                    </label>
-
-                    <label for="numero-interio" class="texto">
-                        Numero interior:
-                        <input id="numero-exterior" type="number"  step="any">
-                    </label>
-
-                    <label for="ciudad-estado" class="texto">
-                        Ciudad o estado :
-                        <input id="ciudad-estado" type="text" placeholder="Ciudad de México">
-                    </label>
-                    
-                    <label for="alcaldia" class="texto">
-                        Alcaldía :
-                        <input id="alcaldia" type="text" placeholder="Coyoacan">
-                    </label>
-
-                    <label for="colonia" class="texto">
-                        Colonia :
-                        <input id="colonia" type="text" placeholder="Churubusco">
-                    </label>
-
-                    <label for="cp" class="texto">
-                        Código postal :
-                        <input id="cp" type="number" >
-                    </label>
-
-
-                    <br><br>
-
-                    <fieldset class="formulario-bloques"> 
-
-                        <legend class="formulario-bloques__titulo"> Datos de la compradora </legend>
-    
-                            <label for= "nombre-usuario" class="texto">
-                                 Nombre : 
-                                <input id="nombre-usuario" type="texto" class="texto" size="20"  name="nombre" id="nombre"  placeholder="Nombre del usuario" required>
+                        <div class="formulario-bloques__div">
+                            <label for="nombre-usuario" class="texto">
+                                Nombre :
+                                <input id="nombre-usuario" type="texto" class="texto" size="30" name="nombre"
+                                    id="nombre" placeholder="Nombre del usuario" required>
                             </label>
-    
+                        </div>
+                        <div class="formulario-bloques__div">
                             <label for="apellido-usuario" class="texto">
                                 Apellido :
-                                <input id="apellido-usuario" type="text" class="texto" size="20"  name="apellido" id="apellido"  placeholder="Apellido del usuario" required>
+                                <input id="apellido-usuario" type="text" class="texto" size="30" name="apellido"
+                                    id="apellido" placeholder="Apellido del usuario" required>
                             </label>
-                        
+                        </div>
+                        <div class="formulario-bloques__div">
                             <label for="telefono-usuario">
                                 Telefono :
-                                <input id="telefono-usuario" type="tel"
-                                size="20" placeholder="numero telefonico">
+                                <input id="telefono-usuario" type="tel" size="30" placeholder="numero telefonico">
                             </label>
+                        </div>
+                        <div class="formulario-bloques__div">
                             <label for="correo-usuario">
                                 Correo electronico :
-                                <input id="correo-usuario" type="email" 
-                                size="25" placeholder="@ejemplo.com">
-                            </label> 
-                     </fieldset>
-                    
-                    <br>
+                                <input id="correo-usuario" type="email" size="30" placeholder="@ejemplo.com">
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
 
-                    <label for="inf-perro" class="texto">
-                        información adicional
-                    <textarea name="" id="" cols="100" rows="" placeholder="añade informacion sobre tu perro"></textarea>
-                    </label>
+                <fieldset class="formulario-bloques">
 
-                   
+                    <legend class="formulario-bloques__titulo"> Datos de envio </legend>
+                    <hr class="hr-formulario">
+                    <div class="formulario-bloques__grid--dos">
+                        <div>
+                            <label for="nombre-calle" class="texto">
+                                Nombre de la calle :
+                                <input id="nombre-perro" type="text" placeholder="Nombre de la calle" size="30">
+                            </label>
+                        </div>
 
-            </fieldset>
-                 <!-- boton sencillo para enviar información-->
-                 <input type="submit" class="boton-enviar" >
+                        <div>
+                            <label for="numero-exterior" class="texto">
+                                Numero exterio:
+                                <input id="numero-exterior" type="number" step="any" size="30">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="numero-interio" class="texto">
+                                Numero interior:
+                                <input id="numero-exterior" type="number" step="any" size="30">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="ciudad-estado" class="texto">
+                                Ciudad o estado :
+                                <input id="ciudad-estado" type="text" placeholder="Ciudad de México" size="30">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="alcaldia" class="texto">
+                                Alcaldía :
+                                <input id="alcaldia" type="text" placeholder="Coyoacan" size="30">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="colonia" class="texto">
+                                Colonia :
+                                <input id="colonia" type="text" placeholder="Churubusco" size="30">
+                            </label>
+                        </div>
+
+                        <div>
+                            <label for="cp" class="texto">
+                                Código postal :
+                                <input id="cp" type="number" size="30">
+                            </label>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="referencias__label" class="texto">
+                                información adicional
+
+                                <textarea name="referencias" id="referencias" cols="110" rows="2"
+                                    placeholder="referencias"></textarea>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="formulario-bloques">
+
+                    <legend class="formulario-bloques__titulo"> Método de pago </legend>
+                    <hr class="hr-formulario">
+                    <div class="formulario-bloques__grid--tres">
+                        <div>
+                            <label for="nombre-tarjeta" class="texto">
+                                Nombre del titular de la tarjeta :
+                                <input id="nombre-tarjeta" type="texto" class="texto" size="20" name="nombre"
+                                    placeholder="Nombre y apellidos" required>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="num-tarjeta" class="texto">
+                                Numero de la tarjeta:
+                                <input id="num-tarjeta" type="number" class="texto" placeholder="XXXX XXXX XXXX XXXX"
+                                    required>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="fecha-vencimiento">
+                                Fecha de vencimiento :
+                                <input id="fecha-vencimiento" type="date" size="20" >
+                            </label>
+                        </div>
+                        <div>
+                            <label for="cvs">
+                                CVS :
+                                <input id="cvs" type="number" size="3" placeholder="xxx">
+                            </label>
+                        </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="formulario__checknox">
+                        <label for="">He leido y acepto terminos y condiciones. </label>
+                        <input type="checkbox" required>
+                    </div>
+                </fieldset>
+                <br>
+                <div class="formulario__boton">
+                    <button class="formulario__boton-enviar" type="submit">FINALIZAR COMPRA</button>
+                </div>
             </form>
+
         </section>
+
     </main>
-    
-   
+
+
 
 
 
 
     <footer>
         <div class="contenido-footer">
-            <div class="contenido-footer-dos"> 
+            <div class="contenido-footer-dos">
 
-                    <div class="contenido-footer-texto siguenos" >
-                        <img class="Siguenos__logo" src="../Imagenes/logo.png" alt="logo">
-                        <h4 class="siguenos__titulo">Siguenos en nuestras redes sociales</h4>
-                        <div class="Siguenos__redes">
-                        <a href="README.md"><img src="../Imagenes/whatsapp.png" height="40"  alt="whatsapp"></a>
+                <div class="contenido-footer-texto siguenos">
+                    <img class="Siguenos__logo" src="../Imagenes/logo.png" alt="logo">
+                    <h4 class="siguenos__titulo">Siguenos en nuestras redes sociales</h4>
+                    <div class="Siguenos__redes">
+                        <a href="README.md"><img src="../Imagenes/whatsapp.png" height="40" alt="whatsapp"></a>
                         <a href="README.md"><img src="../Imagenes/instagram.png" height="40" alt="instagram"></a>
-                        </div>
-                    </div>  
+                    </div>
+                </div>
 
-                    <div class="contenido-footer-texto informacion">
+                <div class="contenido-footer-texto informacion">
+                    <ul>
+                        <h4>ATENCION AL CLIENTE : </h4>
+                        <hr>
+                        <li>ATENCION@vd.com.</li>
+                        <li>CONTÁCTANOS 554327 23 78</li>
+                        <li>LUNES A VIERNES 9 AM A 7 PM.</li>
+                        <li>AVISO DE PRIVACIDAD.</li>
+                        <li>TÉRMINOS Y CONDICIONES</li>
+                    </ul>
+                </div>
+
+                <div class="contenido-footer-texto mapa">
+                    <h5 class="mapa__titulo"> ENCUENTRANOS EN :</h5>
+                    <iframe class="mapa__frame"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15062.305775903145!2d-99.1252857!3d19.300777!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01a2c4234d5b%3A0x837f2fc05c4fa99e!2sNuevo%20Bazar%20Pericoapa!5e0!3m2!1ses-419!2smx!4v1686843670234!5m2!1ses-419!2smx"
+                        width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <div class=" mapa-texto">
                         <ul>
-                            <h4>ATENCION AL CLIENTE : </h4>
-                            <hr>
-                            <li>ATENCION@vd.com.</li>
-                            <li>CONTÁCTANOS 554327 23 78</li>
-                            <li>LUNES A VIERNES 9 AM A 7 PM.</li>
-                            <li>AVISO DE PRIVACIDAD.</li>
-                            <li>TÉRMINOS Y CONDICIONES</li>
+                            <li class="mapa-texto__lista">Canal de Miramontes 3155, Coapa</li>
+                            <li class="mapa-texto__lista">Vergel Coapa,Tlalpan, 14320 </li>
+                            <li class="mapa-texto__lista">Ciudad de México, CDMX</li>
                         </ul>
                     </div>
-
-                    <div class="contenido-footer-texto mapa">
-                        <h5 class="mapa__titulo"> ENCUENTRANOS EN :</h5>
-                        <iframe class="mapa__frame" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1744.2648882605708!2d-99.17801359606538!3d19.32934356234122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdepartamento%20de%20etologia%20fmvz%20unam!5e0!3m2!1ses!2smx!4v1685460678792!5m2!1ses!2smx" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                        <div class=" mapa-texto">
-                            <ul>
-                                <li class="mapa-texto__lista">Canal de Miramontes 3155, Coapa</li>
-                                <li class="mapa-texto__lista">Vergel Coapa,Tlalpan, 14320 </li>
-                                <li class="mapa-texto__lista">Ciudad de México, CDMX</li>
-                            </ul>
-                        </div>
-                    </div> 
-            </div> 
+                </div>
+            </div>
         </div>
     </footer>
+    <script src="../JS/carrito-compra.js"></script>
 </body>
+
 </html>

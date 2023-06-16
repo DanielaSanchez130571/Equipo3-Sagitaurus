@@ -2,17 +2,20 @@
     --color-primario:#CFC4BD;
     --color-cafe: #7C4E29;
 }
+
+
 aside {
     width: 33%;
     display: inline-block;
     position: sticky;
-    background-color: var(--color-primario);
+    height: auto;
+    background-color: #cfc4bd7b;
     text-align: center;
     margin-top: 50px;
 }
 
 main {
-    width: 66%;
+    width: 64%;
     display: inline-block;
     vertical-align: top;
     padding-left: 20px;
@@ -25,7 +28,7 @@ main {
 
 .card{    
     margin-bottom: 15px;
-    background-color: var(--color-primario);
+    
     border:100px;
 }
 
@@ -43,56 +46,122 @@ main {
 
 
 .formulario__titulo{
-    text-align: justify;
+    text-align: center;
     color: black;
     font-size: 30px;
     padding-top: 20px;
     padding-bottom: 10px;
+
    
 }
 
 .formulario__p{
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-family: Montserrat;
 }
 
 .formulario__form{
-    justify-content: space-evenly;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    line-height: 1.5;
-    font-weight:lighter;
-    padding: 10px 0;
-    font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .formulario-bloques{
     padding: 10px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
     
 }
 
 .formulario-bloques__titulo{
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
+}
+
+.formulario-bloques__grid{
+    display: grid;
+    grid-template-columns: minmax(300px, 800px) minmax(300px, 800px);
+}
+
+.formulario-bloques__grid--dos{
+    display: grid;
+    grid-template-columns: minmax(300px, 800px) minmax(300px, 800px);
+}
+
+.formulario-bloques__grid--tres{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+fieldset{
+    border: none;
+    margin-bottom: 20px;
+}
+
+.hr-formulario{ 
+    margin-bottom: 10px;
+
+}
+
+label{
+    font-family: Montserrat;
+    font-size: 14px;   
 }
 
 label > input {
     padding: 6px;
     text-align: justify;
     margin-bottom: 10px;
-       
+    border-radius: 7px;
+    background-color: #ede7e353;
+    margin-bottom:20px ;
+    margin-top: 3px;
+    font-family: Montserrat; 
+      
 }
 
 textarea{
     text-align: justify;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    font-weight:lighter;
     padding: 6px;
-    font-size: 15px;
-    color: azure;
+    background-color: #ede7e353;
+    margin-top: 5px;
+    font-family: Montserrat;
+    border-radius: 7px;
+ 
 }
 
-.boton-enviar{
-    font-size: 20px;
-    background-color: #F39C12;
-    margin-top: 10px;
+.formulario__checknox{
+    margin-left: 10px;
 }
+
+.formulario__boton{
+    text-align: center;
+}
+
+.formulario__boton-enviar{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--color-primario);
+    border: 1px solid var(--color-cafe);
+    box-shadow: 0px 0px 5px var(--color-primario);
+    color: black;
+    margin-top: 100px;
+    margin-bottom: 40px;   
+    margin-right: 250px;
+}
+
+.formulario__boton-enviar:hover{
+    background-color: black;
+    border: 1px solid var(--color-cafe);
+    box-shadow: 0px 0px 7px var(--color-primario);
+    color: white;
+
+}
+
+
