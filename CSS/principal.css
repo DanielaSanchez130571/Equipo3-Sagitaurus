@@ -1,0 +1,50 @@
+.foto-principal__boton{
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.102);
+    border: 2px solid var(--color-cafe);
+    box-shadow: 0px 0px 5px var(--color-primario);
+    position: absolute;
+
+}
+
+.foto-principal__boton--blanco{
+    color: white;
+}
+
+.foto-principal{
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.best-seller{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.best-seller__texto{
+    font-size: 25px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.best-seller__boton{
+    font-size: 25px;
+    margin-top: 7px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    border: 2px solid var(--color-cafe);
+    box-shadow: 0px 0px 5px var(--color-primario);
+
+}
+.best-seller__foto{
+    height: 300px;
+    padding: 10px;
+}
