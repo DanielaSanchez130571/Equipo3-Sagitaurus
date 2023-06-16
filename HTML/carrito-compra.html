@@ -35,13 +35,17 @@
     </header>
 
     <aside>
-        <p>productos que se encunetran dentro del carrito </p>
+        <h2 class="titulo-carrito-compras">Carrito de compras</h2>
+        <article class="card">
+            <a href="cinturon"><img class="card__imagen" src="../Imagenes/CatalogoBolsos/Bolso2.png" alt="articulo-cinturon"></a>
+            <figcaption><b>Cinturon</b><br>$0.00</figcaption>
+        </article>
     </aside>
 
     <main>
         <section class="formulario">
 
-            <h3 class="formulario__titulo"> COMPRAR </h3>
+            <h3 class="formulario__titulo"> REALIZAR LA COMPRA </h3>
 
             <p class="formulario__p">
                 Porfavor ayudanos a llenar el siguiente formulario con los datos que se te piden.
@@ -55,12 +59,12 @@
 
                         <label for= "nombre-usuario" class="texto">
                              Nombre : 
-                            <input id="nombre-usuario" type="texto" class="texto" size="20" title="esto es un ejemplo" name="nombre" id="nombre"  placeholder="Nombre del usuario" required>
+                            <input id="nombre-usuario" type="texto" class="texto" size="20"  name="nombre" id="nombre"  placeholder="Nombre del usuario" required>
                         </label>
 
                         <label for="apellido-usuario" class="texto">
                             Apellido :
-                            <input id="apellido-usuario" type="text" class="texto" size="20" title="esto es un ejemplo" name="apellido" id="apellido"  placeholder="Apellido del usuario" required>
+                            <input id="apellido-usuario" type="text" class="texto" size="20"  name="apellido" id="apellido"  placeholder="Apellido del usuario" required>
                         </label>
                     
                         <label for="telefono-usuario">
@@ -99,7 +103,49 @@
                         <input id="ciudad-estado" type="text" placeholder="Ciudad de México">
                     </label>
                     
+                    <label for="alcaldia" class="texto">
+                        Alcaldía :
+                        <input id="alcaldia" type="text" placeholder="Coyoacan">
+                    </label>
+
+                    <label for="colonia" class="texto">
+                        Colonia :
+                        <input id="colonia" type="text" placeholder="Churubusco">
+                    </label>
+
+                    <label for="cp" class="texto">
+                        Código postal :
+                        <input id="cp" type="number" >
+                    </label>
+
+
                     <br><br>
+
+                    <fieldset class="formulario-bloques"> 
+
+                        <legend class="formulario-bloques__titulo"> Datos de la compradora </legend>
+    
+                            <label for= "nombre-usuario" class="texto">
+                                 Nombre : 
+                                <input id="nombre-usuario" type="texto" class="texto" size="20"  name="nombre" id="nombre"  placeholder="Nombre del usuario" required>
+                            </label>
+    
+                            <label for="apellido-usuario" class="texto">
+                                Apellido :
+                                <input id="apellido-usuario" type="text" class="texto" size="20"  name="apellido" id="apellido"  placeholder="Apellido del usuario" required>
+                            </label>
+                        
+                            <label for="telefono-usuario">
+                                Telefono :
+                                <input id="telefono-usuario" type="tel"
+                                size="20" placeholder="numero telefonico">
+                            </label>
+                            <label for="correo-usuario">
+                                Correo electronico :
+                                <input id="correo-usuario" type="email" 
+                                size="25" placeholder="@ejemplo.com">
+                            </label> 
+                     </fieldset>
                     
                     <br>
 

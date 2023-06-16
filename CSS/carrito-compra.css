@@ -7,12 +7,32 @@ aside {
     display: inline-block;
     position: sticky;
     background-color: var(--color-primario);
+    text-align: center;
+    margin-top: 50px;
 }
 
 main {
     width: 66%;
     display: inline-block;
     vertical-align: top;
+    padding-left: 20px;
+}
+
+.titulo-carrito-compras{
+    margin: 20px;
+}
+
+
+.card{    
+    margin-bottom: 15px;
+    background-color: var(--color-primario);
+    border:100px;
+}
+
+.card__imagen{
+    height: 300px;
+    width: 270px;
+    margin:20px
 }
 
 .formulario{
@@ -22,35 +42,35 @@ main {
 }
 
 
-.titulo-formulario{
+.formulario__titulo{
     text-align: justify;
-    color: rgb(205, 147, 23);
+    color: black;
     font-size: 30px;
     padding-top: 20px;
     padding-bottom: 10px;
-    padding: 10px 5%;
+   
 }
 
-.p-formulario{
-    color: #F39C12;
+.formulario__p{
+    padding-bottom: 30px;
 }
 
-.form-formulario{
+.formulario__form{
     justify-content: space-evenly;
     font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     line-height: 1.5;
     font-weight:lighter;
-    padding: 10px 5%;
+    padding: 10px 0;
     font-size: 16px;
 }
 
-.bloques-formulario{
+.formulario-bloques{
     padding: 10px;
     width: 100%;
     
 }
 
-.titulo-bloque{
+.formulario-bloques__titulo{
     font-size: 18px;
     font-weight: bold;
 }
