@@ -25,7 +25,6 @@
 .barra{
     background-color: var(--color-primario);
     text-align: right;
-    
 }
 
 .barra_icono{
@@ -35,10 +34,9 @@
 }
 
 .encabezado{
+    width: 100%;
     clear: both;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: table;
 }
 
 .logo{
@@ -49,12 +47,12 @@
 
 .barra-navegacion{
     width: 900px;
-    margin: 0 auto;    
+    margin: 0 auto;  
+    float: right;  
 }
 
 nav ul li {
     list-style: none;
-
 }
 
 
@@ -62,21 +60,27 @@ nav ul li {
     text-decoration: none;
     color: black;
     list-style: none;
-    float:inline-start;
-    margin-left: 80px;
+    float:left;
+    margin-left: 20px;
+    margin-top: 55px;
     padding: 10px;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .barra-navegacion__ventanas:hover{
+    margin-left: 20px;
+    margin-top: 55px;
+    padding: 10px;
     color: var(--color-cafe);
     border: 1px solid var(--color-cafe);
     border-radius: 15px;
-    box-shadow: 0px 0px 1px var(--color-cafe);   
+    box-shadow: 0px 0px 2px var(--color-cafe);   
 }
 
 .logo{
-    width: 150px;   
+    width: 150px;
+    float: left;
+    vertical-align: top;   
 }
 
 hr{
