@@ -1,35 +1,42 @@
 
 .formulario{
-
     page-break-inside: 100px;
     text-align: center;
     padding-bottom: 100px;
-    padding-top: 60px;
+    padding-top: 100px;
+    
 }
 
 legend{
-    margin-left: 180px;
-    margin-bottom: 20px;
-
+    margin-left: 90px;
+    padding: 50px;
 }
 
 fieldset{
     border: none;
     text-align: left;
     padding-left: 32%;
-    
 }
 
 input{
     margin-top: 10px;
     margin-bottom: 12px;
     width: 500px;
+    box-shadow: 0px 0px 5px var(--color-primario);
 }
 
-
-#boton-registro{
+button{
     width: 90px;
     box-shadow: 0px 0px 5px var(--color-primario);
     text-align: center;
-    margin-left: 20%;
-}   
+    margin-left: 45%; 
+    margin-bottom: 100px;
+    background-color: var(--color-primario);
+    border: 1px solid var(--color-cafe);
+    box-shadow: 0px 0px 20px var(--color-primario);
+    border-radius: 3px;
+}
+
+button:hover{
+    filter: contrast(50%);
+}

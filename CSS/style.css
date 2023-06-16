@@ -1,12 +1,12 @@
 @font-face {
     font-family: Playfair-Display;
-    src: url("Font/PlayfairDisplay-VariableFont_wght.ttf");
+    src: url("../Fonts/PlayfairDisplay-VariableFont_wght.ttf");
 }
 
 
 @font-face {
     font-family: Montserrat;
-    src: url("Font/Montserrat-Light.ttf");
+    src: url("../Fonts/Montserrat-Light.ttf");
 }
 
 *{
@@ -21,6 +21,8 @@
     --color-primario:#CFC4BD;
     --color-cafe: #7C4E29;
 }
+
+
 
 .barra{
     background-color: var(--color-primario);
@@ -42,13 +44,13 @@
 .logo{
     width: 150px;
     float: left;
-    vertical-align: top;
+    vertical-align: top; 
 }
 
 .barra-navegacion{
     width: 900px;
     margin: 0 auto;  
-    float: right;  
+    float: right;
 }
 
 nav ul li {
@@ -64,7 +66,7 @@ nav ul li {
     margin-left: 20px;
     margin-top: 55px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 20px; 
 }
 
 .barra-navegacion__ventanas:hover{
@@ -74,13 +76,13 @@ nav ul li {
     color: var(--color-cafe);
     border: 1px solid var(--color-cafe);
     border-radius: 15px;
-    box-shadow: 0px 0px 2px var(--color-cafe);   
+    box-shadow: 0px 0px 2px var(--color-cafe);  
 }
 
 .logo{
     width: 150px;
     float: left;
-    vertical-align: top;   
+    vertical-align: top;
 }
 
 hr{
@@ -123,7 +125,6 @@ footer{
 
 .Siguenos__redes{
     margin-left: 50px;
-    
 }
 
 .Siguenos__redes img{
